@@ -8,9 +8,8 @@
     "start": "next start",
     "lint": "yarn run eslint && yarn run stylelint",
     "eslint": "eslint --fix '**/*.{ts,tsx}'",
-    "stylelint": "stylelint '**/*.{css,scss}'",
-    "prettier": "prettier --write '**/*.{ts,tsx,css,scss}'",
-    "postinstall": "husky install"
+    "stylelint": "stylelint --fix '**/*.{css,scss}'",
+    "prettier": "prettier --write '**/*.{ts,tsx,css,scss}'"
   },
   "dependencies": {
     "next": "10.0.8",
@@ -42,5 +41,14 @@
     "stylelint-prettier": "^1.2.0",
     "tailwindcss": "^2.0.3",
     "typescript": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --fix",
+    "*.{css,scss}": "stylelint --fix"
   }
 }
