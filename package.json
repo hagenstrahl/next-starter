@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest --watch",
+    "test": "jest --watchAll",
     "test:ci": "jest --ci --coverage",
     "lint": "yarn run eslint && yarn run stylelint",
     "eslint": "eslint --fix '**/*.{ts,tsx}'",
