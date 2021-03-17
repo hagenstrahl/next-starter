@@ -17,7 +17,6 @@ module.exports = {
   moduleNameMapper: {
     "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
   },
-  testRegex: "/*.test.tsx$",
   collectCoverage: true,
   coverageReporters: ["lcov"],
   coverageDirectory: ".test-coverage",
