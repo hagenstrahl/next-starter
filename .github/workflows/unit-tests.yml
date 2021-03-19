@@ -3,7 +3,8 @@ name: Unit-Tests
 on:
   pull_request:
     branches: [ main ]
-
+  push:
+    branch: [main]
 jobs:
   run-tests:
     runs-on: ubuntu-latest
