@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
 export default function Home(): JSX.Element {
@@ -57,7 +58,13 @@ export default function Home(): JSX.Element {
           rel="noopener noreferrer"
         >
           Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          <Image
+            src="/vercel.svg"
+            width="50"
+            height="50"
+            alt="Vercel Logo"
+            className={styles.logo}
+          />
         </a>
       </footer>
     </div>
