@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.0.5",
-    "@testing-library/dom": "^8.11.1",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^27.0.1",
@@ -29,7 +28,6 @@
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
     "autoprefixer": "^10.2.5",
-    "babel-jest": "^27.4.2",
     "eslint": "^8.4.0",
     "eslint-config-next": "12.0.6",
     "eslint-config-prettier": "^8.3.0",
@@ -45,6 +43,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.0.1",
     "prettier": "^2.2.1",
+    "react-test-renderer": "^17.0.2",
     "sass": "^1.32.8",
     "stylelint": "^14.1.0",
     "stylelint-config-prettier": "^9.0.3",
