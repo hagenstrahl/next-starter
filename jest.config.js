@@ -1,10 +1,6 @@
 module.exports = {
   clearMocks: true,
-  collectCoverageFrom: [
-    "**/*.{ts,tsx}",
-    "!**/*.d.ts",
-    "!**/node_modules/**",
-  ],
+  collectCoverageFrom: ["**/*.{ts,tsx}", "!**/*.d.ts", "!**/node_modules/**"],
   setupFilesAfterEnv: ["<rootDir>/setupTests.js"],
   testPathIgnorePatterns: ["/node_modules/", "/.next/"],
   transform: {
@@ -28,5 +24,6 @@ module.exports = {
       statements: 0,
     },
   },
-  "moduleDirectories": ["node_modules", "src"]
+  moduleDirectories: ["node_modules", "src"],
+  testEnvironment: "jsdom",
 };
